@@ -8,9 +8,6 @@
 
 body {
   background-color: rgb(221, 221, 221);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: rgb(34, 34, 34);
   font-family: "Comfortaa", cursive;
 }
@@ -31,16 +28,15 @@ h3 {
   color: white;
 }
 
-.output-card-container {
-  display: flex;
-  justify-content: space-between;
-  width: 950px;
-  margin-top: 50px;
+.output-card-container{
+  
 }
 
 .output-card {
   background-color: rgb(238, 238, 238);
-  width: 300px;
+  padding-top: 2rem;
+  width: 400px;
+  margin: 20px auto;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -68,19 +64,11 @@ h3 {
   color: #2f80ed;
 }
 
-.input-card-container {
-  width: 800px;
-  margin: 100px auto 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 .input-card {
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid rgb(34, 34, 34); */
   box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
@@ -91,6 +79,10 @@ h3 {
 
 .input-card div {
   margin-top: 10px;
+}
+
+.input-container{
+  gap: .5rem;
 }
 
 input {
@@ -136,11 +128,8 @@ button:active {
   background: none;
 }
 
-
-@media screen and (max-width: 320px) {
-  
-}
-
-@media screen and (min-width: 576px) {
-  
+@media screen  and (min-width: 992px){
+  .input-card{
+    margin-left: 3.7rem;
+  }
 }
